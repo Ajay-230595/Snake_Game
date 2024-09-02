@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #000; */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#game-canvas {
+  color: #000;
+  border: 1px solid #000;
+  width: 100%; /* full width on mobile and tablet */
+  height: 400px; /* adjust the height as needed */
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  /* laptop and desktop */
+  #game-canvas {
+    width: 50%; /* 50% width on laptop and desktop */
+    margin: 0 auto; /* center the canvas */
+  }
+}
+
+.controls {
+  margin-top: 35px;
+}
+#play-button {
+  background-color: rgb(0, 128, 0);
+}
+#pause-button {
+  background-color: rgb(255, 166, 0);
+}
+#restart-button {
+  background-color: rgb(0, 128, 255);
+}
+.controls button {
+  background-color: red;
+  padding: 12px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls button:hover {
+  /* background-color: #333; */
+  color: #ffffffd3;
+  opacity: 0.7;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
